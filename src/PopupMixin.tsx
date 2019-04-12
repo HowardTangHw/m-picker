@@ -139,6 +139,7 @@ export default function PopupMixin(getModal, platformProps) {
     }
 
     hide = () => {
+      this.props.hide && this.props.hide()
       this.fireVisibleChange(false);
     }
 
